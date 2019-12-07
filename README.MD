@@ -1,5 +1,10 @@
 ## LDAP Proxy for Cloudron
 
+## Security Warnings
+
+**THIS CAN POTENTIALLY EXPOSE YOUR CLOUDRON'S INTERNAL LDAP SERVER TO THE __WORLD__. DO NOT USE THIS APP IN PRODUCTION IN ANY WAY!!!!
+
+
 ### Installing
 
 Install docker and cloudron-cli then:
