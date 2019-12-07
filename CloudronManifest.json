@@ -1,0 +1,30 @@
+{
+  "id": "org.urgero.ldapproxy",
+  "title": "Simple LDAP Proxy",
+  "author": "Mitchell Urgero <info@urgero.org>",
+  "description": "A simple LDAP Proxy for cloudron - Be sure to block outside connections to port 3389!",
+  "changelog": "file://CHANGELOG",
+  "tagline": "LDAP Proxy Service",
+  "version": "0.0.1",
+  "healthCheckPath": "/",
+  "httpPort": 8000,
+  "memoryLimit": 536870912,
+  "tcpPorts": {
+     "LDAP_T_PORT": {
+       "title": "LDAP Port",
+       "description": "Port to use as the external LDAP port (Should leave as 3389!)",
+       "defaultValue": 3389
+     }
+  },
+  "addons": {
+    "ldap": {}
+  },
+  "manifestVersion": 1,
+  "website": "https://urgero.org",
+  "contactEmail": "support@cloudron.io",
+  "icon": "logo.png",
+  "tags": [
+    "im", "collaboration", "voip", "videochat"
+  ],
+  "mediaLinks": [ ]
+}
